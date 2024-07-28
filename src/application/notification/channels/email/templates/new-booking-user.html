@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Email Template</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;500;600;700&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
+
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        font-family: 'Kumbh Sans', sans-serif;
+        background-color: #f1f1f1;
+      }
+
+      header {
+        gap: 12px;
+        margin: auto;
+        padding-top: 47px;
+        padding-bottom: 44.96px;
+      }
+
+      main {
+        /* margin: 90px; */
+        margin: auto;
+        background-color: #ffffff;
+        width: 820px;
+        /* height: Fixed (1, 325px); */
+        padding: 68px 78px 68px 78px;
+        border-radius: 20px;
+        gap: 60px;
+      }
+
+      .container {
+        background-color: #001529;
+        border-radius: 8px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        color: #ffffff;
+        gap: 13px;
+        padding: 39.5px 58px 39.5px 52px;
+      }
+
+      #logo {
+        /* max-width: 20%; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .hero p {
+        font-weight: 600;
+        font-size: 32px;
+        width: 379px;
+      }
+
+      .hero span {
+        font-weight: 400;
+        font-size: 14px;
+        width: 286px;
+      }
+
+      .text h1 {
+        color: #001529;
+        /* width: 664px; */
+        font-size: 32px;
+        font-weight: 700;
+      }
+
+      .text-1 {
+        color: #3b3b3b;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 34px;
+        margin-top: 83px;
+      }
+
+      .close {
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        margin-top: 60px;
+        gap: 27px;
+      }
+
+      .close p {
+        color: #001529;
+        font-weight: 500;
+        font-size: 20px;
+        list-style: 26px;
+      }
+
+      .close span {
+        color: #001529;
+        font-family: 'Handlee', cursive;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 26px;
+      }
+
+      .download {
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+        justify-content: center;
+        margin-top: 40px;
+      }
+
+      .download div {
+        background-color: #000000;
+        border-color: #a6a6a6;
+        padding: 14.77px 10.32px 13.5px 10.31px;
+        border-radius: 8px;
+        color: #ffffff;
+      }
+
+      div .ios {
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+      }
+
+      div section {
+        display: flex;
+        flex-direction: column;
+      }
+
+      footer {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 56px;
+        margin: auto;
+        color: #404040;
+        font-family: 'Kumbh Sans', sans-serif;
+        font-weight: 500;
+        font-size: 20px;
+      }
+
+      .learn-more {
+        font-weight: 700;
+        line-height: 31px;
+        text-align: left;
+        color: #fb7637;
+        font-size: 1.1em;
+      }
+
+      @media (max-width: 480px) {
+        header {
+          font-size: 16px;
+        }
+
+        main {
+          width: 335px;
+          padding: 18.5px 36.22px 18.5px;
+        }
+
+        .container {
+          display: flex;
+          flex-direction: column;
+          padding: 15.5px 21.23px 15.5px;
+        }
+
+        .hero p {
+          font-weight: 500px;
+          font-size: 20px;
+          width: 286px;
+        }
+
+        .text h1 {
+          font-size: 20px;
+          font-weight: 500;
+        }
+
+        footer {
+          font-size: 12px;
+        }
+
+        section .download-1 {
+          font-size: 10px;
+        }
+
+        .text-1 {
+          font-size: 16px;
+        }
+
+        header img {
+          align-items: center;
+        }
+      }
+      table {
+        border-collapse: collapse;
+        width: 100%;
+        padding: 0 10px;
+        margin: 30px 10px 10px 10px;
+      }
+      table td,
+      th {
+        border: 0.5px solid #001529;
+        padding: 25px 20px;
+        text-align: left;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div>
+      <header id="logo">
+        <img
+          src="https://res.cloudinary.com/dfjud30cb/image/upload/v1714368251/tman-logo/RKM0GR2__1.svg"
+          class="img"
+          alt="tracman logo"
+        />
+        <span class="">...Redefining Hospitality</span>
+      </header>
+      <main>
+        <div class="container">
+          <div class="hero">
+            <h1>Booking for room {{roomNumber}} at {{hotelName}} hotel</h1>
+          </div>
+          <div>
+            <img
+              src="https://res.cloudinary.com/dfjud30cb/image/upload/v1714368322/envelop-img/07GFTEL__1.svg"
+              alt="envelop image"
+              style="margin-right: -10px;"
+            />
+          </div>
+        </div>
+
+        <div class="text">
+          <h2>Dear {{guestName}},</h2>
+          <p>
+            Thank you for your recent booking with us. Here are the details of
+            your booking:
+          </p>
+        </div>
+        <table>
+          <tr>
+            <th>Booking ID:</th>
+            <td>{{bookingId}}</td>
+          </tr>
+          <tr>
+            <th>Hotel Name:</th>
+            <td>{{hotelName}}</td>
+          </tr>
+          <tr>
+            <th>Room Type:</th>
+            <td>{{roomCategoryName}}</td>
+          </tr>
+          <tr>
+            <th>Room Number:</th>
+            <td>{{roomNumber}}</td>
+          </tr>
+          <tr>
+            <th>Check-in Date:</th>
+            <td>{{checkInDate}}</td>
+          </tr>
+          <tr>
+            <th>Check-out Date:</th>
+            <td>{{checkOutDate}}</td>
+          </tr>
+          <tr>
+            <th>Booking Status:</th>
+            <td>{{bookingStatus}}</td>
+          </tr>
+          <tr>
+            <th>Special Request:</th>
+            <td>{{specialRequest}}</td>
+          </tr>
+          <tr>
+            <th>Room Amount:</th>
+            <td>{{specialRequest}}</td>
+          </tr>
+          <tr>
+            <th>Reservation Type:</th>
+            <td>{{reservationType}}</td>
+          </tr>
+        </table>
+
+        <div class="close">
+          <p>Cheers,</p>
+          <span>Tracman Team</span>
+        </div>
+
+        <div class="download">
+          <div class="ios">
+            <img
+              src="https://res.cloudinary.com/dfjud30cb/image/upload/v1714368430/andoid-logo/4EFJI0E__1.svg"
+              alt="android logo"
+            />
+            <section>
+              <span class="download-1">Download on the</span>
+              <span class="download-2">Google Play</span>
+            </section>
+          </div>
+          <div class="ios">
+            <img
+              src="https://res.cloudinary.com/dfjud30cb/image/upload/v1714368470/apple-logo/9LFQAFT__1.svg"
+              alt="apple logo"
+            />
+            <section>
+              <span class="download-1">Download on the</span>
+              <span class="download-2">App Store</span>
+            </section>
+          </div>
+        </div>
+      </main>
+
+      <footer>
+        <div>
+          <span>
+            <p>Copyright © 2024 Tracman, All rights reserved.</p>
+            <p>
+              You are receiving this email because you opted-in via our website.
+            </p>
+          </span>
+          <span>
+            <p>Want to change how often you receive these emails?</p>
+            <p>You can <u>update your preferences.</u></p>
+          </span>
+        </div>
+        <div>
+          <img
+            src="https://res.cloudinary.com/dfjud30cb/image/upload/v1714406941/footer-logo/HQ4M543__1.svg"
+            class="img"
+            alt="Logo"
+          />
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
